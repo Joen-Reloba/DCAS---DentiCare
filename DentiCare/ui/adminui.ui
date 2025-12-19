@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin</class>
+ <widget class="QWidget" name="Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1088</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>4</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(239, 236, 227);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1121</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(26, 16, 84);</string>
+    </property>
+    <widget class="QPushButton" name="logoutBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>490</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #255FF1;                 
+    border: none;
+    border-bottom: 2px solid #255FF1;
+    font: 'Chakra Petch';
+    padding: 6px 10px;
+}
+
+/* Hover: filled with #255FF1 */
+QPushButton:hover {
+    background-color: #255FF1;
+    color: white;
+    border-bottom: 2px solid  #255FF1;
+    border-radius: 10px;
+}
+
+/* Pressed: darker shade */
+QPushButton:pressed {
+    background-color: #1E4ED8;
+    color: white;
+    border-bottom: 2px solid  #255FF1;
+    border-radius: 10px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Logout</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="admin_logo_holder">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="staffBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;        
+}
+
+QPushButton:hover {
+    background-color: rgb(60, 50, 130);   
+    color: rgb(255, 255, 255);          
+    font: 'Chakra Petch';
+}
+
+QPushButton:pressed {
+    background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+
+QPushButton:checked {
+  background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Staff</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="accountBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;        
+}
+
+QPushButton:hover {
+    background-color: rgb(60, 50, 130);   
+    color: rgb(255, 255, 255);          
+    font: 'Chakra Petch';
+}
+
+QPushButton:pressed {
+    background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+
+QPushButton:checked {
+  background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Accounts</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="serviceBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>300</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;        
+}
+
+QPushButton:hover {
+    background-color: rgb(60, 50, 130);   
+    color: rgb(255, 255, 255);          
+    font: 'Chakra Petch';
+}
+
+QPushButton:pressed {
+    background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+
+QPushButton:checked {
+  background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Services</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="transactionBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>360</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>13</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;        
+}
+
+QPushButton:hover {
+    background-color: rgb(60, 50, 130);   
+    color: rgb(255, 255, 255);          
+    font: 'Chakra Petch';
+}
+
+QPushButton:pressed {
+    background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+
+QPushButton:checked {
+  background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Transactions</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dashboardBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;        
+}
+
+QPushButton:hover {
+    background-color: rgb(60, 50, 130);   
+    color: rgb(255, 255, 255);          
+    font: 'Chakra Petch';
+}
+
+QPushButton:pressed {
+    background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}
+
+QPushButton:checked {
+  background-color: rgb(239, 236, 227);
+    color: rgb(26, 16, 84);
+    font: 'Chakra Petch';
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Dashboard</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>1111</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_5">
+     <widget class="QWidget" name="totalpatientholder" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>251</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#totalpatientholder{
+border-radius: 12px;
+background-color: white;
+  border: 2px solid #1A1054;
+}
+
+#totalpatientholder QWidget {
+    background-color: none; 
+}</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);</string>
+       </property>
+       <property name="text">
+        <string>Total Patients</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="totalpatientField">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>121</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>99</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="totalstaffholder" native="true">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>20</y>
+        <width>251</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#totalstaffholder{
+border-radius: 12px;
+background-color: white;
+  border: 2px solid #1A1054;
+}
+
+#totalstaffholder QWidget {
+    background-color: none; 
+}</string>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);</string>
+       </property>
+       <property name="text">
+        <string>Total Staff</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="totalstaffField">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>10</y>
+         <width>141</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>99</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="totalrevenueHolder" native="true">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>20</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#totalrevenueHolder{
+border-radius: 12px;
+background-color: white;
+  border: 2px solid #1A1054;
+}
+
+#totalrevenueHolder QWidget {
+    background-color: none; 
+}</string>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);</string>
+       </property>
+       <property name="text">
+        <string>Total Revenue</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="totalrevenueField">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>191</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>99</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="graphFrame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>941</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="crud_btn_holder" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>931</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>791</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="staffAddBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(0, 170, 0);
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+QPushButton:hover {
+    background-color: rgb(0, 190, 0);
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+    background-color: rgb(0, 140, 0);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="staffUpdateBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(255, 170, 0);   /* base */
+    color: white;
+    border: 1px solid rgb(230, 150, 0);
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 185, 40);  
+}
+
+QPushButton:pressed {
+    background-color: rgb(230, 150, 0); 
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="staffDelBtn">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>10</y>
+         <width>131</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(180, 50, 50);   /* darker red - serious tone */
+    color: white;
+    border: 1px solid rgb(120, 30, 30);  /* slightly darker border */
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(160, 40, 40);   /* muted hover - less inviting */
+}
+
+QPushButton:pressed {
+    background-color: rgb(130, 30, 30);   /* pressed darker - reinforces caution */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>931</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTableWidget" name="staffTable">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableWidget {
+    color: rgb(26, 16, 84);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    gridline-color: rgb(200, 200, 200);
+    padding: 5px;  /* optional: adds spacing inside cells */
+}
+
+QHeaderView::section {
+    background-color: rgb(26, 16, 84);
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+    padding: 5px;  /* spacing inside headers */
+}
+</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Staff ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Full Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Sex</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Birthday</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Contact Number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Address</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Role</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Date Hired</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>License Number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Added At</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Updated At</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="crud_btn_holder_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>440</y>
+        <width>931</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>791</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="accountAddBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(0, 170, 0);
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+
+QPushButton:hover {
+    background-color: rgb(0, 190, 0);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(0, 140, 0);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="accountUpdateBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(255, 170, 0);  
+    color: white;
+    border: 1px solid rgb(230, 150, 0);
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 185, 40);  
+}
+
+QPushButton:pressed {
+    background-color: rgb(230, 150, 0);   
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="accountDelBtn">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>10</y>
+         <width>131</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(180, 50, 50);   /* darker red - serious tone */
+    color: white;
+    border: 1px solid rgb(120, 30, 30);  /* slightly darker border */
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(160, 40, 40);   /* muted hover - less inviting */
+}
+
+QPushButton:pressed {
+    background-color: rgb(130, 30, 30);   /* pressed darker - reinforces caution */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="accountTableFrame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>931</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="accountTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget {
+    color: rgb(26, 16, 84);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    gridline-color: rgb(200, 200, 200);
+    padding: 5px;  /* optional: adds spacing inside cells */
+}
+
+QHeaderView::section {
+    background-color: rgb(26, 16, 84);
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+    padding: 5px;  /* spacing inside headers */
+}
+</string>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Staff ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Staff Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Username</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Password</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Role</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Added At</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Updated At</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="crud_btn_holder_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>440</y>
+        <width>931</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>791</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="serviceAddBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(0, 170, 0);
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+QPushButton:hover {
+    background-color: rgb(0, 190, 0);
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+    background-color: rgb(0, 140, 0);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="serviceUpdateBtn">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(255, 170, 0);   /* base */
+    color: white;
+    border: 1px solid rgb(230, 150, 0);
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 185, 40);  
+}
+
+QPushButton:pressed {
+    background-color: rgb(230, 150, 0);  
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="serviceDelBtn">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>10</y>
+         <width>131</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(180, 50, 50);   /* darker red - serious tone */
+    color: white;
+    border: 1px solid rgb(120, 30, 30);  /* slightly darker border */
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(160, 40, 40);   /* muted hover - less inviting */
+}
+
+QPushButton:pressed {
+    background-color: rgb(130, 30, 30);   /* pressed darker - reinforces caution */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="servicesTableFrame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>931</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableWidget" name="servicesTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget {
+    color: rgb(26, 16, 84);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    gridline-color: rgb(200, 200, 200);
+    padding: 5px;  /* optional: adds spacing inside cells */
+}
+
+QHeaderView::section {
+    background-color: rgb(26, 16, 84);
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+    padding: 5px;  /* spacing inside headers */
+}
+</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Service ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Service Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Base Price</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>VAT</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Final Price</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Added At</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Updated At</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>430</y>
+        <width>931</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+      </property>
+      <widget class="QLineEdit" name="totalRevenueField">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>10</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> QLineEdit {
+        border: 2px solid #1A1054;
+        border-radius: 10px;
+        padding: 3px;
+background-color: rgb(255, 255, 255);
+    }</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(26, 16, 84);</string>
+       </property>
+       <property name="text">
+        <string>Total Revenue:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="generateReportBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(37, 95, 241); 
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font: 'Chakra Petch';
+}
+
+QPushButton:hover {
+    background-color: rgb(58, 115, 255); 
+}
+
+QPushButton:pressed {
+    background-color: rgb(20, 70, 200);   
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Generate Report</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="transactionsTableFrame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>931</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>-100</y>
+         <width>931</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4"/>
+      </widget>
+      <widget class="QTableWidget" name="recordsTable">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>929</width>
+         <height>399</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+    color: rgb(26, 16, 84);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    gridline-color: rgb(200, 200, 200);
+    padding: 5px;  /* optional: adds spacing inside cells */
+}
+
+QHeaderView::section {
+    background-color: rgb(26, 16, 84);
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+    padding: 5px;  /* spacing inside headers */
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+       </property>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Transaction ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ProcessedBy</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Patient ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Patient Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Dentist Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Service</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Price at Transaction</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Quantity</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total Amount</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Transaction Date</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(26, 16, 84);</string>
+    </property>
+    <property name="text">
+     <string>Welcome, Admin</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
